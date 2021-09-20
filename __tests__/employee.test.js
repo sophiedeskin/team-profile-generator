@@ -17,13 +17,32 @@ describe("Employee", () => {
             expect(typeof(obj)).toBe("object");
         })
     })
-})
-describe("Name", () => {
-    it("should return an employee's name", ()
-    => {
-        const name = "Sophie"
-        const obj = new Employee(name);
-        expect(obj.name).toBe(name)
-    }
+    describe("Name", () => {
+        it("should return an employee's name", ()
+        => {
+            const name = "Sophie"
+            const obj = new Employee(name);
+            expect(obj.getName()).toBe(name);
+        }
+    )
+    describe("ID", () => {
+        it("should return an employee's id", ()
+        => {
+            const name = "Sophie"
+            const id = 2000
+            const obj = new Employee(name, id);
+            expect(obj.getId()).toBe(id);
+        }
+    )
+    describe("Email", () => {
+        it("should return an employee's email", ()
+        => {
+            const name = "Sophie"
+            const email = "sophie@gmail.com"
+            const id = 2000
+            const obj = new Employee(name, id, email);
+            expect(obj.getEmail()).toBe(id);
+        }
     )
 })
+})})})
