@@ -7,7 +7,9 @@ const Intern = require("./lib/Intern.js");
 const html = require("./src/htmltemplate.js");
 const Employee = require("./lib/Employee.js");
 const path = require("path")
+//resolving to an absolute path in output folder
 const OUTPUT_DIR = path.resolve(__dirname, "output")
+//merging two paths together
 const outputPath = path.join(OUTPUT_DIR, "team.html");
 const render = require("./src/htmltemplate")
 var tucker = new Manager("Tucker", 2000, "t@aol.com", 8045553366)
