@@ -18,16 +18,14 @@ describe("Employee", () => {
         })
     })
     describe("Name", () => {
-        it("should return an employee's name", ()
-        => {
+        it("should return an employee's name", () => {
             const name = "Sophie"
             const obj = new Employee(name);
             expect(obj.getName()).toBe(name);
         }
     )
     describe("ID", () => {
-        it("should return an employee's id", ()
-        => {
+        it("should return an employee's id", () => {
             const name = "Sophie"
             const id = 2000
             const obj = new Employee(name, id);
@@ -35,13 +33,12 @@ describe("Employee", () => {
         }
     )
     describe("Email", () => {
-        it("should return an employee's email", ()
-        => {
+        it("should return an employee's email", () => {
             const name = "Sophie"
             const email = "sophie@gmail.com"
             const id = 2000
             const obj = new Employee(name, id, email);
-            expect(obj.getEmail()).toBe(id);
+            expect(obj.getEmail()).toBe(email);
         }
     )
 })
